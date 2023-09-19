@@ -20,6 +20,10 @@ app.get('/api/v1/books/:id', async (req, res) => {
     res.status(200).json({message: 'books Id'})
 })
 
+app.get('/', async (req, res) => {
+    res.status(200).json({message: 'Home'})
+})
+
 const PORT = process.env.PORT
 
 app.listen(PORT, () => {
